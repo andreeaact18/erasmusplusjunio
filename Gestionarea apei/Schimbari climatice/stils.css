@@ -1,0 +1,76 @@
+body {
+  background-image: url('https://images.pexels.com/photos/1446076/pexels-photo-1446076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 250px;
+}
+
+* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f9ff;
+  color: #1b262c;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Conținut principal */
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #0077b6;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+ul li::marker {
+  color: #00b4d8;
+}
+
+ol li::marker {
+  color: #0077b6;
+}
+
+/* Footer */
+footer {
+  background-color: #1b262c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 8px;
+  margin-top: 30px;
+}

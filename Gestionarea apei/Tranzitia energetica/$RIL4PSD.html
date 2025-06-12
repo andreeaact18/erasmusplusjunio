@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+	<!META HTTP-EQUIV="REFRESH" CONTENT="15">
+	<LINK REL="shortcut icon" HREF="">
+	<LINK REL="stylesheet" HREF="">
+	<TITLE>Page 12</TITLE>
+	
+	<STYLE>
+		body{
+			background:white;
+			color:black;
+			font-family:Times New Roman;
+			font-size:20;
+			margin:40px;
+			line-height:1.5;
+			}
+			
+		
+		
+			
+	</STYLE>
+	
+	<SCRIPT>
+	//this is not html, it's Javascript
+	function start()
+	{
+	//alert("generating a secret number")
+	secret.value=parseInt(1000*Math.random())
+	starter.style.visibility="hidden"
+	attemps.value=0
+	}
+	//-----------------------------------------
+	function trying()
+	{
+	attemps.value=1*attemps.value+1
+	
+	if(secret.value>yours.value)
+	    message.value="MORE!"
+		
+	if(secret.value>yours.value)
+	    message.value="LESS!"
+		else
+		message.value="less!"
+	if(secret.value==yours.value)
+	    {
+	    message.value="VERY WELL!"
+		starter.style.visibility="visible"
+		}
+		
+		
+	}
+	//------------------------------------------
+	//end of script section
+		
+	</SCRIPT>
+	
+</HEAD>
+
+<BODY>
+        <input type="button"
+		id="starter"
+		value="start the game"
+		onclick="start()">
+		<br><br>
+		
+		secret number is
+		<input type="text" id="secret" style="visibility:visible">
+        <br><br>
+		what's the number?	
+		<input tyoe="text" id="yours">
+		<input type="button" value="try" onclick="trying()">
+		
+		
+		<input type="text" id="message"  readonly>
+		Attemps
+		<input type="text" is="attemps" readonly>
+		
+		
+	
+		
+	
+	
+	
+</BODY>
+
+</HTML>

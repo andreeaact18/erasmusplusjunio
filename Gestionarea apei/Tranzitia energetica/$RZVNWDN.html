@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+	<!META HTTP-EQUIV="REFRESH" CONTENT="15">
+	<LINK REL="shortcut icon" HREF="">
+	<LINK REL="stylesheet" HREF="]">
+	<TITLE>page 10</TITLE>
+	
+	<STYLE>
+		body{
+		    background:white;
+			color:black;
+			font-family:arial;
+			font-size:20;
+			margin:40px;
+			line-height:1.5;
+			}
+			
+			div{
+			border-style:solid;
+			width:400;
+			height:300;
+			left:100;
+			position:absolute;
+			top:100;
+			left:600;
+			visibility:hidden;
+			text-align:center;
+			padding:10;
+			{
+			img{
+			width:20;
+			height:20;
+			}
+	</STYLE>
+	
+	<SCRIPT>
+		//This is not HTML, it's Javascript
+		function afiseaza(x)
+		{
+		//alert("it's work)
+		x.style.visibility="visible"
+		}
+		//-------------------------------------------------
+		function paint()
+		{
+		x.style.visibility="hidden"
+		}
+		//--------------------------------------------------
+		functio paint(x)
+		{
+		main.style.background=x
+		}
+		//--------------------------------------------------
+		
+		//End of script section
+	</SCRIPT>
+	
+</HEAD>
+
+<BODY>
+    <div id="main" style="left:50;visibility:visible;">
+        This is the main section<br>
+		
+		 <input type="button" value="help" onclick="afiseaza(help)">
+		 <input type="button" value="credits" onclick="afiseaza(credits)">
+		 <input type="button" value="settings" onclick="afiseaza(settings)">
+	</div>
+	
+	<div id="help">
+	  This is the help  <br>
+	  
+	   <input type="button" value="Ascunde" onclick="ascunde(help)">
+	</div>
+	
+	<div id="credits">
+	  This is credits(about me) <br>
+	  
+	  Paula Tirnovan <br>
+	  Falticeni- Romania <br>
+	  0747954023 <br>
+	  paulatirnocqn71@gmail.com <br>
+	  <img src="https://www.shutterstock.com/shutterstock/photos/1524264647/display_1500/stock-photo-brasov-transylvania-romania-the-medieval-castle-of-bran-known-for-the-myth-of-dracula-1524264647.jpg"> <br> <br>
+	  
+	  <input type="button" value="Ascunde" onclick="ascunde(credits)">
+	</div>
+	
+	
+	<div id="settings">
+	settings <br><br>
+	
+	choose a color:
+	<input type="button"  value="   " style="backgroung:red" onclick="paint('red')">
+	<input type="button"  value="   " style="background:blue"  onclick="paint('blue')">
+	<input type="button"  value="   "style="background:green"  onclick="paint('green')">
+	<input type="button"  value="   "style="background:yellow"  onclick="paint('yellow')">
+	
+
+	
+	
+	
+	
+	<br><br><br>
+	<input type="button" value="Ascunde" onclick="ascunde(settings)">
+	</div>
+	
+	
+	
+	
+	
+</BODY>
+
+</HTML>

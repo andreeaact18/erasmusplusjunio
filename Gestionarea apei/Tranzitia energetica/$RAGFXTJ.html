@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Validation</title>
+</head>
+<body>
+    <h1>Time Validation</h1>
+
+    <form method="post" action="./time.php" ?>">
+        Hour: <input type="number" name="hour" min="0" max="24" required><br>
+        Minute: <input type="number" name="minute" min="0" max="59" required><br>
+        Second: <input type="number" name="second" min="0" max="59" required><br>
+        <input type="submit" value="Validate">
+    </form>
+</body>
+</html>

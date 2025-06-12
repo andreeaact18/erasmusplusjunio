@@ -1,0 +1,75 @@
+body {
+  background-image: url('https://images.pexels.com/photos/30666102/pexels-photo-30666102/free-photo-of-plaja-spaniola-lini-tita-cu-ape-azurii.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STIL PENTRU CORPUL PAGINII */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f7fa;
+  color: #004d40;
+  line-height: 1.6;
+  padding: 100px;
+}
+
+/* HEADER */
+header {
+  background-color: #006064;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+/* SECTIUNI */
+main section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 6px solid #00838f;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  color: #006064;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+ul li::marker {
+  color: #0097a7;
+}
+
+ol li::marker {
+  color: #00796b;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #004d40;
+  color: white;
+  padding: 15px 0;
+  border-radius: 6px;
+  margin-top: 40px;
+}

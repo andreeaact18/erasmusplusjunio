@@ -1,0 +1,6 @@
+body {
+  background-image: url('https://images.pexels.com/photos/532192/pexels-photo-532192.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Înlocuiește cu calea către fotografia ta */
+  background-size: cover;       /* Redimensionează imaginea ca să acopere tot ecranul */
+  background-position: center;  /* Centrează imaginea */
+  background-repeat: no-repeat; /* Nu repetă imaginea */
+}

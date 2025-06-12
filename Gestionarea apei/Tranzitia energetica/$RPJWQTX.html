@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+	<!META HTTP-EQUIV="REFRESH" CONTENT="15">
+	<LINK REL="shortcut icon" HREF="">
+	<LINK REL="stylesheet" HREF="">
+	<TITLE>Page 11</TITLE>
+	
+	<STYLE>
+		body{
+			background:white;
+			color:black;
+			font-family:Times New Roman;
+			font-size:20;
+			margin:40px;
+			line-height:1.5;
+			}
+			
+		div{
+			background:grey;
+			border-style:solid;
+			width:400;
+			height:300;
+			position:absolute;
+			top:100;
+			left:600;
+			visibility:hidden;
+			text-align:center;
+			padding:10;
+			}
+			input{
+			width:20;
+			height:20;
+			}
+		img{
+			width:70;
+			height:100;
+			}
+	</STYLE>
+	
+	<SCRIPT>
+		//This is not HTML, it's Javascript
+		function afiseaza(x)
+			{
+			//alert("It works")
+			x.style.visibility="visible"
+			}
+		//-----------------------------------------
+		function ascunde(x)
+			{
+			x.style.visibility="hidden"
+			}
+		//-----------------------------------------
+		function paint(x)
+			{
+			a.style.background="blue"
+			}
+		//-----------------------------------------
+		function paint2(x)
+			{
+			main.style.color=x
+			}
+		//-----------------------------------------
+		function operate()
+		{
+		//alert("Operating...")
+		c.value=1*a.value+1*b.value
+		d.value=a.value-b.value
+		e.value=a.value*b.value
+		f.value=a.value/b.value
+		g.value=a.value**b.value
+		}
+		//-----------------------------------------
+		function erase()
+		{
+		//alert("Detaling results...")
+		c.value=""
+		d.value=""
+		e.value=""
+		f.value=""
+		g.value=""
+		}
+		//End of script section
+	</SCRIPT>
+	
+</HEAD>
+
+<BODY>
+	<div id="main" style="left:50;visibility:visible;height:400;">
+		This is the main section <br> 
+		
+		Number <input type+"text" id="a" onclick="erase()"> <br>
+		Number <input type+"text" id="b"onclick="erase()"> <br> <br>
+		<input type="button" value="Go"  onclick="operate()">
+		
+		<br><br>
+		Addition <input type="text"  id="c" readonly> <br>
+		Substraction <input type="text"  id="d" readonly> <br>
+		Multiply <input type="text"  id="e" readonly> <br>
+		Division <input type="text"  id="f" readonly> <br>
+		 Power       <input type="text"  id="g" readonly> <br>
+		
+		<input type="button" value="Help" onclick="afiseaza(help)">
+		<input type="button" value="Credits" onclick="afiseaza(credits)">
+		<input type="button" value="Settings" onclick="afiseaza(settings)">
+	</div>
+	
+	<div id="help">
+		This is the help <br>
+		
+		<input type="button" value="Ascunde" onclick="ascunde(help)">
+	</div>
+	
+	<div id="credits">
+		This is credits (About me) <br>
+		
+		Tirnovan Paula <br>
+		principala - falticeni - Country <br>
+		Telephone <br>
+		Paulatirnocqn71@gmail.com <br>
+		<img src=""> <br><br>
+		
+		<input type="button" value="Ascunde" onclick="ascunde(credits)">
+	</div>
+	
+	<div id="settings">
+		Settings <br><br>
+		
+		Choose a color for the background: 
+		<input type="button" value="  " style="background:red" onclick="paint('red')">
+		<input type="button" value="  " style="background:blue" onclick="paint('blue')">
+		<input type="button" value="  " style="background:green" onclick="paint('green')">
+		<input type="button" value="  " style="background:yellow" onclick="paint('yellow')">
+		<br><br>
+		
+		Choose a color for the text: 
+		<input type="button" value="  " style="background:red" onclick="paint2('red')">
+		<input type="button" value="  " style="background:blue" onclick="paint2('blue')">
+		<input type="button" value="  " style="background:green" onclick="paint2('green')">
+		<input type="button" value="  " style="background:yellow" onclick="paint2('yellow')">
+		
+		
+		<br><br><br>
+		<input type="button" value="Ascunde" onclick="ascunde(settings)">
+	</div>
+	
+</BODY> 
+<input type="button" id="a" onclick="paint (this)">
+<input type="button" id="a" onclick="paint (this)">
+<input type="button" id="a" onclick="paint (this)">
+
+</HTML>

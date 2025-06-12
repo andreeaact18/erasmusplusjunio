@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.drop{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(245, 182, 182);
+}
+li{
+    float: left;
+    padding: 8px;
+}
+li a {
+    transition: 1s ease;
+    display: block;
+    text-decoration: none;
+    color: rgb(50, 48, 45);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li a:hover{
+    color: rgb(153, 225, 201);
+    transition: 1s ease;
+}
+ .drop{
+    background-color:rgb(228, 143, 218) ;
+ }
+ .drop button {
+    background-color: rgb(231, 110, 209);
+ }
+.dropdown{
+    
+    list-style: none;
+    position: absolute;
+    left: 65px;
+    top:40px;
+    padding: 0px !important;
+    display: none;
+  }
+  .dropdown li{
+    background: #be55e8;
+    margin-top: 5px;
+   
+  }
+ #open:hover +.dropdown{
+    display: block;
+ }
+
+
+.grup{
+    display:
+     flex;
+    width:100%;
+    height: auto;
+}
+
+.gallery{
+    align-self: center;
+    transition: 2s ease-in-out
+}
+.gallery a img{
+padding: 2%;
+width:80%;
+height: auto;
+border-radius: 20px;
+}
+.gallery .desc{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:black;
+}
+
+
+.text{
+    width:100px;
+    height:100px;
+    background:#b16fa6;
+    transition: 2s;
+}
+.text:hover{
+    transform: rotate(40deg);
+    transition: 2s;
+    background:#ff8686;
+}
+/*animations*/
+
+@keyframes moves{
+    0%{
+        background-color: #8396ff;letf:0px; top: 0%;
+    }
+    30%{
+        transform: translateY(100px);
+    }
+    60%{
+        transform:translateY(0);
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+.anim1{
+    background-color: rgb(255, 127, 157);
+    width:200px;
+    height:150px;
+    position: relative;
+    margin:4%;
+    animation: moves infinite 3s;
+}
+
+@keyframes move2{
+    0%{
+        transform: translateX(500px);
+        background-color: #b71669;
+    }
+    50%{
+        transform: translateX(0);
+background-color: #e35bcd;
+    }
+    100%{
+        transform: translateX(500px);
+        background-color: #ca3232c4;
+    }
+}
+.anim2{
+    width:200px;
+    height:150px;
+    position: relative;
+    margin:4%;
+    animation: move2 3s infinite;
+}
